@@ -2,7 +2,7 @@
 <h2>Objetivo</h2>
 <p>Esse aplicativa foi desenvolvido para auxiliar o usuário em seus estudos e tarefas. Com uma interface simples e amigável,
 basta o usuário clicar no nos ícones da tabela, e ela será marcada de vermelho.
-<h2>Como usar?</h2>
+<h2>Como usar</h2>
 <p>O uso é bastante simples, porem, nesta versão 0.1, ainda não foi inserido um mode para colocar os dias e as metérias/tarefas que
 usuario necessitará, por meio da interface. Caso queira inserir mais dias e tarefas, você irá precisar acessar o código e alterar na
 constante numeroDeDias, para alterar a quantidade de dias, e na tabela HTML para alterar as tarefas.</p>
