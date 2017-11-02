@@ -55,10 +55,13 @@
 	<script>
 	    const numeroDeDias = 16 
 	    let marcadorDeDias = []
-	    for(let cont = numeroDeDias; cont > 0; cont--)
-			marcadorDeDias.unshift('white')
-	    
-	    const trows  = document.getElementsByTagName('tr')
+	   	const trows  = document.getElementsByTagName('tr')
+	    for (let contI = 0; contI < trows.length; contI ++) {
+	    	let arrayLinha = []
+	    	for(let cont = numeroDeDias; cont > 0; cont--)
+				arrayLinha.push('white')
+			marcadorDeDias.unshift(arrayLinha)
+	    }
 	    let linhas = []
 		for (let contar = trows.length - 1; contar >= 0; contar-- )
 		   linhas.unshift(trows[contar])
@@ -68,9 +71,7 @@
 		}
 
 	    //desenhar divs na tela
-	    console.log('LINHA', linhas)
 	    const tabela = linhas.map(function (linha, numeroLinha) {
-	    	console.log('eueu',linha)
 	        return marcadorDeDias[numeroLinha].map(function (dia, indice) {
 			    if (dia === 'white') {
 			    	dia = document.createElement('div')
@@ -85,11 +86,9 @@
 						    this.style.backgroundColor = 'red'
 						}
 					})
-					console.log(dia.style.backgroundColor)
 					return dia
 			    }
 			    else {
-			    	console.log(linha, numeroLinha)
 					dia = document.createElement('div')
 					linha.appendChild(dia)
 					dia.addEventListener('click', function () {
@@ -107,16 +106,13 @@
 	    })
 
 	    function salvarEstado () {
-	    	console.log('tatata', tabela[0])
 	    	var estadoParaSalvar = tabela.map(function (linha) {
 	    		return linha.map(function (dia) {
 	    			return dia.style.backgroundColor
 	    		})	
 	    	})
 	    	localStorage.setItem("estadoPronto", JSON.stringify(estadoParaSalvar))
-	    	console.log(JSON.parse(localStorage.getItem("estadoPronto")))
-	    	
-	    }  
+   	    }  
 	</script>    
     </body>
 </html>
