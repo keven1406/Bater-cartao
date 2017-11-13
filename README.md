@@ -1,6 +1,6 @@
 <h1>Bater cartão</h1>
 <h2>Objetivo</h2>
-<p>Esse aplicativa foi desenvolvido para auxiliar o usuário em seus estudos e tarefas. Com uma interface simples e amigável,
+<p>Esse aplicativo foi desenvolvido para auxiliar o usuário em seus estudos e tarefas. Com uma interface simples e amigável,
 basta o usuário clicar no nos ícones da tabela, e ela será marcada de vermelho.
 <h2>Como usar</h2>
 <p>O uso é bastante simples, porém, nesta versão 0.1, ainda não foi inserido um modo para colocar os dias e as matérias/tarefas que
